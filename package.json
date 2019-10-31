@@ -74,7 +74,8 @@
     "test-all": "./scripts/test-all.sh",
     "test-node": "jest --config .jest.node.js --no-cache",
     "tsc": "tsc",
-    "site:test": "jest --config .jest.site.js --cache=false"
+    "site:test": "jest --config .jest.site.js --cache=false",
+    "publish:skipper": "yarn dist && yarn compile && cd $REPOS/liftoff/skipper && yarn upgrade antd"
   },
   "husky": {
     "hooks": {
